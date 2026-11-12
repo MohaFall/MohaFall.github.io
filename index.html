@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed FALL — Développeur web junior</title>
+  <meta name="description" content="Portfolio de Mohamed FALL, diplômé d'un BTS SIO option SLAM (2025). Recherche un CDI de développeur web junior ou de technicien support autour des Ulis (91) ou en télétravail.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation bar, fixed at the top of the page -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="nav-logo" href="#top">Mohamed FALL</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero: who I am and what I am looking for -->
+    <section class="hero container">
+      <p class="hero-kicker">BTS SIO option SLAM · diplômé en 2025</p>
+      <h1>Mohamed FALL<br><span>Développeur web junior</span></h1>
+      <p class="hero-text">
+        Je conçois des applications web de bout en bout, de la base de données à l'interface.
+        Je cherche un <strong>CDI</strong> de développeur web junior ou de technicien support,
+        autour des <strong>Ulis (91)</strong> ou en télétravail.
+      </p>
+      <ul class="hero-facts">
+        <li>CDI</li>
+        <li>Les Ulis (91) · 20 km ou télétravail</li>
+        <li>Disponible sous 8 jours</li>
+        <li>Anglais B2</li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projets">Voir mes projets</a>
+        <a class="btn" href="assets/cv/CV_Mohamed_FALL.pdf" target="_blank" rel="noopener">Mon CV (PDF)</a>
+        <a class="btn" href="#contact">Me contacter</a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projets">
+      <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <p class="section-intro">Mes projets personnels de 2026, puis mes projets de BTS.</p>
+
+        <!-- Mada -->
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/img/projects/mada-app.jpg" alt="Mada sur téléphone : page d'accueil avec les dernières critiques, et classement des œuvres notées" width="928" height="848" loading="lazy">
+          </div>
+          <div class="project-body">
+            <p class="project-type">Projet personnel · application web</p>
+            <h3>Mada</h3>
+            <p>
+              Une application web pour suivre ses jeux vidéo, séries, films, animés et livres.
+              Elle s'installe sur téléphone comme une vraie application (PWA).
+            </p>
+            <ul class="project-points">
+              <li>Comptes utilisateurs : connexion par pseudo grâce à une fonction côté serveur.</li>
+              <li>Base de données PostgreSQL protégée par la sécurité RLS : chacun ne voit que ses données.</li>
+              <li>Rôle administrateur vérifié côté serveur.</li>
+              <li>Mise en ligne automatique sur Vercel à chaque push (~40 commits).</li>
+            </ul>
+            <ul class="tags">
+              <li>React 19</li><li>Vite</li><li>React Router</li><li>Supabase</li><li>PostgreSQL</li><li>Vercel</li>
+            </ul>
+            <div class="project-links">
+              <a class="btn btn-small btn-primary" href="https://backlog-mo-db7a.vercel.app/" target="_blank" rel="noopener">Voir en ligne</a>
+            </div>
+            <p class="project-note">Il faut créer un compte pour tester l'application.</p>
+          </div>
+        </article>
+
+        <!-- Himma -->
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/img/projects/himma-1.jpg" alt="Partie de Himma : statistiques du personnage et un choix à faire" width="800" height="600" loading="lazy">
+          </div>
+          <div class="project-body">
+            <p class="project-type">Projet personnel · jeu web</p>
+            <h3>Himma</h3>
+            <p>
+              Un jeu narratif en texte : on vit toute la vie d'un personnage, de l'enfance à la mort.
+              Chaque choix fait évoluer ses statistiques et son destin.
+            </p>
+            <ul class="project-points">
+              <li>JavaScript sans framework, découpé en modules ES (<code>import</code> / <code>export</code>).</li>
+              <li>Sauvegarde de la partie dans le navigateur avec <code>localStorage</code>.</li>
+              <li>Textes du jeu séparés du code, dans des fichiers de données.</li>
+              <li>Jouable sur PC et sur téléphone (~86 commits).</li>
+            </ul>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Modules ES</li><li>localStorage</li>
+            </ul>
+            <!--
+              HIMMA LINKS: once the game is published, replace the <span> below with real links, e.g.
+              <a class="btn btn-small btn-primary" href="https://mohafall.github.io/himma/" target="_blank" rel="noopener">Jouer en ligne</a>
+              <a class="btn btn-small" href="https://github.com/MohaFall/himma" target="_blank" rel="noopener">Voir le code</a>
+            -->
+            <div class="project-links" id="himma-links">
+              <span class="btn btn-small btn-disabled">Bientôt jouable en ligne</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- BTS projects -->
+        <h3 class="subsection-title">Projets de BTS (2024–2025)</h3>
+        <div class="cards">
+
+          <article class="card">
+            <img src="assets/img/projects/vva-database.jpg" alt="Schéma de la base de données du projet VVA" width="1200" height="527" loading="lazy">
+            <div class="card-body">
+              <h4>VVA — activités d'un village vacances</h4>
+              <p>
+                Site web de gestion des animations d'un village vacances : les encadrants créent les activités,
+                les vacanciers s'inscrivent selon les places disponibles. Droits différents selon le type de compte.
+              </p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML/CSS</li></ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/projects/football-database.jpg" alt="Schéma de la base de données du club de football" width="1200" height="550" loading="lazy">
+            <div class="card-body">
+              <h4>Gestion d'un club de football</h4>
+              <p>
+                Application de bureau : consulter les matchs et les équipes, et pour l'administrateur,
+                gérer (CRUD) les matchs, joueurs, équipes et lieux.
+              </p>
+              <ul class="tags"><li>C#</li><li>.NET Framework</li><li>MySQL</li></ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/projects/manganalyse.jpg" alt="Page de connexion du site MangAnalyse" width="1200" height="538" loading="lazy">
+            <div class="card-body">
+              <h4>MangAnalyse — critiques de manga</h4>
+              <p>
+                Site où les lecteurs consultent des critiques, donnent leur avis et découvrent des œuvres,
+                avec un système de notation et une fiche par titre.
+              </p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML/CSS</li></ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/img/projects/zoo.jpg" alt="Page de connexion du site de gestion d'un zoo" width="1200" height="539" loading="lazy">
+            <div class="card-body">
+              <h4>Gestion d'un zoo</h4>
+              <p>
+                Site pour les employés d'un zoo : liste des animaux, alimentation, habitats.
+              </p>
+              <ul class="tags"><li>PHP</li><li>MySQL</li><li>HTML/CSS</li></ul>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-placeholder" aria-hidden="true">{ API }</div>
+            <div class="card-body">
+              <h4>NewsAPI — lecteur d'actualités</h4>
+              <p>
+                Application de bureau qui affiche des articles d'actualité récupérés depuis une API web :
+                connexion, inscription, détail d'un article et favoris.
+              </p>
+              <ul class="tags"><li>C#</li><li>WPF</li><li>API REST</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section-alt" id="competences">
+      <div class="container">
+        <h2 class="section-title">Compétences</h2>
+        <p class="section-intro">Uniquement des compétences utilisées dans un projet ou un stage.</p>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Langages</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>C#</li><li>Python</li><li>Java</li><li>SQL</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Frameworks et bibliothèques</h3>
+            <ul class="tags"><li>React 19</li><li>React Router</li><li>.NET Framework</li><li>WPF</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Bases de données</h3>
+            <ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Supabase</li><li>Sécurité RLS</li><li>MCD / MLD</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Outils</h3>
+            <ul class="tags"><li>Git / GitHub</li><li>VS Code</li><li>Visual Studio</li><li>Vite</li><li>npm</li><li>ESLint</li><li>Vercel</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Web design</h3>
+            <ul class="tags"><li>Figma</li><li>Webflow</li><li>Wix Studio</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Support</h3>
+            <ul class="tags"><li>Gestion des incidents (tickets)</li><li>Maintenance des postes</li><li>Installation de logiciels</li><li>Formation des utilisateurs</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education and experience -->
+    <section class="section" id="parcours">
+      <div class="container">
+        <h2 class="section-title">Parcours</h2>
+        <ol class="timeline">
+          <li>
+            <p class="timeline-date">Nov. – déc. 2024</p>
+            <h3>Stage web designer — Esekai Agency, Paris</h3>
+            <p>
+              Création de sites de restaurants sur Wix Studio et Webflow, maquettes Figma,
+              analyse des besoins des clients, ergonomie et mise en ligne.
+            </p>
+          </li>
+          <li>
+            <p class="timeline-date">Mai – juil. 2024</p>
+            <h3>Stage support technique N1 — Carrefour Siège Mondial, Massy</h3>
+            <p>
+              Gestion des incidents par tickets, maintenance des postes de travail, installation de logiciels,
+              assistance et formation des utilisateurs, documentation des incidents.
+            </p>
+          </li>
+          <li>
+            <p class="timeline-date">2023 – 2025</p>
+            <h3>BTS SIO option SLAM — Lycée Parc de Vilgénis, Massy</h3>
+            <p>Diplôme obtenu en 2025. Développement d'applications web et de bureau, bases de données.</p>
+          </li>
+          <li>
+            <p class="timeline-date">Depuis 2022</p>
+            <h3>Autres expériences</h3>
+            <p>
+              Agent de cinéma au Megarama des Ulis (caisse, rapports de fin de journée, gestion des séances
+              sur un logiciel métier), vendeur chez Nike, jobs d'été à la Mairie des Ulis :
+              l'habitude du contact avec le public.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-intro">
+          Un poste en CDI à me proposer ? Écrivez-moi, je réponds rapidement.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:03.fall.mohamed@gmail.com">03.fall.mohamed@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/mohamed-fall-mly" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://github.com/MohaFall" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="assets/cv/CV_Mohamed_FALL.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Mohamed FALL · Site fait main en HTML, CSS et JavaScript, hébergé sur GitHub Pages.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
